@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="surveyForm.css">
+    <title>Surey Form</title>
+</head>
+
+<body>
+        <header class="main header">
+                <div class="first-area">
+                    <div class="text-area">
+                        <h1 class="title"><i class="fas fa-feather-alt"></i> Tribute</h1>
+                        <div class="semi-title">
+                                <h2>&emsp;&ensp;Some beings live forever</h2>
+                
+                                </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="second-area">
+                    <nav>
+        
+                        <span>
+                            <a href="#">Home</a>
+                        </span>
+                        <span>
+                            <a href="#">Sign Up</a>
+                        </span>
+                        <span>
+                            <a href="#">Log in</a>
+                        </span>
+                        <span>
+                            <a href="#">Contact us</a>
+                        </span>
+                    </nav>
+                </div>
+            </header>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <div id="form-layout">
+        <p id="description">Give us a chance to improve your user experience</p>
+        <form id="survey-form">
+            <div class="row-tab">
+                <div class="asked">
+                    <label for="name" id="name-label">First Name</label>
+                </div>
+                <div class="answer">
+                    <input type="text" id="name" name="firstname" placeholder=" Jhon smith" required="">
+                </div>
+            </div>
+
+            <div class="row-tab">
+                <div class="asked">
+                    <label for="email" id="email-label">Email Adress</label>
+                </div>
+                <div class="answer">
+                    <input type="text" id="email" name="Email Adress" placeholder=" jhon_smith@example.com" required="">
+                </div>
+            </div>
+
+            <div class="row-tab">
+                <div class="asked">
+                    <label for="number" id="email-label">Age</label>
+                </div>
+                <div class="answer">
+                    <input type="number" id="number" name="age"  required=" ">
+                </div>
+            </div>
+
+            <div class="row-tab">
+                <div class="asked">
+                    <label for="experience" id="dropdown-exp">How satisfied are you with your experience?</label>
+                </div>
+                <div class="answer">
+                    <select id="dropdown">
+                        <option value="very satisfied">Very satisfied</option>
+                        <option value="satisfied">Satisfied</option>
+                        <option value=" unsatisfied">Unsatisfied</option>
+                        <option value="very unsatisfied">Very unsatisfied</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row-tab">
+                <div class="asked">
+                    <label for="experience" id="radio-buttons">Would you recommend us to a freind?</label>
+                </div>
+                <div class="answer">
+                    <ul>
+                        <li>
+                            <label class="container">Yes
+                                <input type="radio" checked="checked" name="radio">
+
+                            </label>
+                        </li>
+                        <li>
+                            <label class="container">No
+                                <input type="radio" name="radio">
+
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row-tab">
+                    <div class="asked">
+                        <label for="hear" id="checkbox">How did you came to know about us?</label>
+                    </div>
+                    <div class="answer">
+                        <ul>
+                            <li>
+                                <label class="container">From a friend
+                                    <input type="checkbox" checked="checked" name="checkbox" value="1">
+    
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container">Google Search
+                                        <input type="checkbox" name="checkbox" value="2">
+    
+                                </label>
+                            </li>
+                            <li>
+                                    <label class="container">TV advertisment
+                                        <input type="checkbox" name="checkbox" value="2">
+        
+                                    </label>
+                                </li>
+                                <li>
+                                        <label class="container">Other
+                                                <input type="checkbox" id="checkbox" name="checkbox" value="4">
+                                            <textarea id="textbox"></textarea>
+                                        </label>
+                                    </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row-tab">
+                        <div class="asked">
+                            <label for="number" id="email-label">Comments and Suggestions</label>
+                        </div>
+                        <div class="answer">
+                            <textarea id="suggestion" name="suggestion" placeholder="Enter your comments here"></textarea>
+                        </div>
+                    </div>
+                <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
